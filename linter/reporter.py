@@ -117,7 +117,7 @@ def write_github_step_summary(result: ScanResult) -> None:
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
     lines = []
-    lines.append("## 🛡️ Compliance & Quality Audit Report")
+    lines.append("## Compliance & Quality Audit Report")
     lines.append("")
     lines.append(f"**Audit Timestamp (UTC):** {timestamp}")
     lines.append(f"**Files Scanned:** {result.files_scanned}  ")
@@ -125,7 +125,7 @@ def write_github_step_summary(result: ScanResult) -> None:
     lines.append("")
 
     if not findings:
-        lines.append("✅ **No violations found.** Repository meets baseline compliance checks.")
+        lines.append("**No violations found.** Repository meets baseline compliance checks.")
     else:
         lines.append("| File | Line | Severity | Violation | Mapped GRC Control | Suggested Remediation |")
         lines.append("|---|---|---|---|---|---|")
