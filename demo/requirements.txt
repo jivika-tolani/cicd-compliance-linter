@@ -1,0 +1,11 @@
+# GOOD: pinned to an exact version
+flask==3.0.2
+
+# BAD: no version at all (DEP001)
+requests
+
+# BAD: uses >= instead of an exact version (DEP001)
+pandas>=2.0
+
+# GOOD: pinned to an exact version
+pytest==8.1.1
