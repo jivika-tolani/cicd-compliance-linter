@@ -72,11 +72,11 @@ def main(argv=None) -> int:
     exit_code = determine_exit_code(result, args.strict)
     if exit_code != 0:
         print(
-            f"\n❌ Compliance gate FAILED — {result.total_violations} violation(s) found. "
+            f"\n Compliance gate FAILED — {result.total_violations} violation(s) found. "
             f"Merge blocked."
         )
     else:
-        print("\n✅ Compliance gate PASSED.")
+        print("\n Compliance gate PASSED.")
 
     return exit_code
 
