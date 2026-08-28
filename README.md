@@ -8,7 +8,7 @@ A tool that automatically checks a software project's code for security and comp
 
 **Name:** CI/CD Compliance and Quality Linter
 
-**Description:** An automated scanner that reviews every code change in a software project for common security mistakes, such as accidentally exposed passwords or unsafe web connections, and stops the change from being accepted until the problem is fixed. Each issue it finds is linked to a specific requirement from two widely used security standards, ISO/IEC 27001 and SOC 2, so the results can also be used as evidence during a compliance audit.
+**Description:** An automated scanner that reviews every code change in a software project for common security mistakes, such as accidentally exposed passwords or unsafe web connections and stops the change from being accepted until the problem is fixed. Each issue it finds is linked to a specific requirement from two widely used security standards:- ISO/IEC 27001 and SOC 2, so the results can also be used as evidence during a compliance audit.
 
 ---
 
@@ -19,12 +19,12 @@ Organizations needing to meet security requirements like ISO/IEC 27001 or SOC 2 
 This manual review process has three main drawbacks:
 
 - It takes a long time, which slows down how quickly teams can release new versions.
-- It lacks uniformity, because different people reviewing the code will spot different issues.
+- It lacks uniformity because different people reviewing the code will spot different issues.
 - It often fails to find problems. A password or access key accidentally left within a large amount of code changes can easily be missed by a human reviewer. This oversight could then allow an attacker to gain access to company systems.
 
 Here are common errors this tool is designed to detect:
 
-- A password, API key, or other private credential written directly into the code instead of being kept in a secure location.
+- A password, API key or other private credential written directly into the code instead of being kept in a secure location.
 - Software components that are not set to a specific, tested version, meaning an update to that part could introduce unverified or malicious changes without anyone noticing.
 - An internet connection that transmits data without encryption, making it possible for that data to be intercepted.
 
