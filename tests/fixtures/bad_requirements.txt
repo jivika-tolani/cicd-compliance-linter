@@ -1,0 +1,4 @@
+requests
+flask>=2.0
+django~=4.0
+click
